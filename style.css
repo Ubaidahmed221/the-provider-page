@@ -1,0 +1,157 @@
+        /* scroll styling */
+body::-webkit-scrollbar {
+    background-color: wheat;
+    width: 1em;
+    border-radius: 10px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 2 2 6px rgba(10, 10, 10, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(57, 170, 170);
+    outline: 2px solid rgb(47, 128, 235);
+    border-radius: 9px;
+  }
+
+
+.scrollable-element {
+    scrollbar-width: 50%;
+
+  }
+#cantact {
+    color: blue;
+    font-weight: 600;
+    font-size: 23;
+
+}
+
+/* footer style */
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding-inline: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+    margin-left: -29px;
+}
+
+footer {
+    background-color: #24262b;
+    height: 450px;
+    padding: 70px 0;
+    margin-bottom: -500px;
+    margin-left: 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+#quick{
+    padding-left: 120px;
+}
+#follow{
+    padding-left: 120px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+
+.footer-col ul li :not(last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+
+
+}
+
+.footer-col .social-link a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+
+}
+.icon a{
+    display: inline-block;
+    height: 40px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 6px 6px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 70%;
+    color: white;
+    transition: all 0.5s ease;
+}
+.icon a:hover{
+    color: #24262b ;
+    background-color: white;
+}
+.footer-col  a :hover{
+    color: #24262b ;
+    background-color: white;
+}
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 25%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+
+    }
+}
